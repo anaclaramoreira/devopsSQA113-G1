@@ -1,8 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node:20'
+    }
 
   environment {
-    FIREBASE_TOKEN = credentials('firebase-token') // esse nome tem que bater com o que você colocou no Jenkins
+    FIREBASE_TOKEN = credentials('firebase-token')
   }
 
   stages {
