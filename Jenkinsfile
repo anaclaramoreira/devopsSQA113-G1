@@ -3,6 +3,7 @@ pipeline {
     docker {
       image 'node:20'
     }
+   }
 
   environment {
     FIREBASE_TOKEN = credentials('firebase-token')
@@ -36,3 +37,4 @@ pipeline {
     }
   }
 }
+
