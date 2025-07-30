@@ -1,0 +1,10 @@
+{
+  "projects": {
+    "default": "devops-prod-3ea0c",
+    "testing": "devops-test-c54ed",
+    "staging": "devops-staging-29869",
+    "prod": "devops-prod-3ea0c"
+  },
+  "targets": {},
+  "etags": {}
+}
