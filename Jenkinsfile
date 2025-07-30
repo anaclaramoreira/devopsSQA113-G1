@@ -32,7 +32,7 @@ pipeline {
       steps {
         input message: 'Deploy to PRODUCTION?', ok: 'Yes, deploy'
         echo 'Deploying to PRODUCTION...'
-        sh 'firebase deploy --only hosting --project production --token=$FIREBASE_TOKEN'
+        sh 'firebase deploy --only hosting --project prod --token=$FIREBASE_TOKEN'
       }
     }
   }
